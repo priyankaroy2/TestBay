@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="3" failed="1" ignored="0" total="8" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="testing ebay" duration-ms="136817" started-at="2019-06-20T12:19:56Z" finished-at="2019-06-20T12:22:13Z">
+    <groups>
+    </groups>
+    <test name="ChromeTest" duration-ms="51962" started-at="2019-06-20T12:19:56Z" finished-at="2019-06-20T12:20:48Z">
+      <class name="verifyProductCart.testEbay">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:verifyProductCart.testEbay@4678c730]" name="setup" is-config="true" duration-ms="7363" started-at="2019-06-20T12:19:56Z" finished-at="2019-06-20T12:20:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="FAIL" signature="login()[pri:0, instance:verifyProductCart.testEbay@4678c730]" name="login" duration-ms="44499" started-at="2019-06-20T12:20:03Z" finished-at="2019-06-20T12:20:48Z">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Unable to locate element: //input[contains(@name,'userid')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-0Q05B1U5', ip: '192.168.43.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 222236, moz:profile: C:\Users\Priyanka\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 505f62ed-4e4c-41b7-9e27-3ca1eb70c338
+*** Element info: {Using=xpath, value=//input[contains(@name,'userid')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: //input[contains(@name,'userid')]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:25:48'
+System info: host: 'LAPTOP-0Q05B1U5', ip: '192.168.43.97', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_171'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.3, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190618025334, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 222236, moz:profile: C:\Users\Priyanka\AppData\L..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 505f62ed-4e4c-41b7-9e27-3ca1eb70c338
+*** Element info: {Using=xpath, value=//input[contains(@name,'userid')]}
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at verifyProductCart.testEbay.login(testEbay.java:42)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="SKIP" signature="browse()[pri:0, instance:verifyProductCart.testEbay@4678c730]" name="browse" duration-ms="0" started-at="2019-06-20T12:20:48Z" depends-on-methods="verifyProductCart.testEbay.login" finished-at="2019-06-20T12:20:48Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testEbay.browse()[pri:0, instance:verifyProductCart.testEbay@4678c730] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testEbay.browse()[pri:0, instance:verifyProductCart.testEbay@4678c730] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browse -->
+        <test-method status="SKIP" signature="item_2()[pri:0, instance:verifyProductCart.testEbay@4678c730]" name="item_2" duration-ms="0" started-at="2019-06-20T12:20:48Z" depends-on-methods="verifyProductCart.testEbay.browse" finished-at="2019-06-20T12:20:48Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testEbay.item_2()[pri:0, instance:verifyProductCart.testEbay@4678c730] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testEbay.item_2()[pri:0, instance:verifyProductCart.testEbay@4678c730] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_2 -->
+        <test-method status="SKIP" signature="deleteItem()[pri:0, instance:verifyProductCart.testEbay@4678c730]" name="deleteItem" duration-ms="0" started-at="2019-06-20T12:20:48Z" depends-on-methods="verifyProductCart.testEbay.item_2" finished-at="2019-06-20T12:20:48Z">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method testEbay.deleteItem()[pri:0, instance:verifyProductCart.testEbay@4678c730] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method testEbay.deleteItem()[pri:0, instance:verifyProductCart.testEbay@4678c730] depends on not successfully finished methods
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:888)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteItem -->
+      </class> <!-- verifyProductCart.testEbay -->
+    </test> <!-- ChromeTest -->
+    <test name="FirefoxTest" duration-ms="136817" started-at="2019-06-20T12:19:56Z" finished-at="2019-06-20T12:22:13Z">
+      <class name="verifyProductCart.testEbay">
+        <test-method status="PASS" signature="setup(java.lang.String)[pri:0, instance:verifyProductCart.testEbay@91161c7]" name="setup" is-config="true" duration-ms="23044" started-at="2019-06-20T12:19:56Z" finished-at="2019-06-20T12:20:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="login()[pri:0, instance:verifyProductCart.testEbay@91161c7]" name="login" duration-ms="19269" started-at="2019-06-20T12:20:19Z" finished-at="2019-06-20T12:20:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="browse()[pri:0, instance:verifyProductCart.testEbay@91161c7]" name="browse" duration-ms="48461" started-at="2019-06-20T12:20:38Z" depends-on-methods="verifyProductCart.testEbay.login" finished-at="2019-06-20T12:21:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browse -->
+        <test-method status="PASS" signature="item_2()[pri:0, instance:verifyProductCart.testEbay@91161c7]" name="item_2" duration-ms="34955" started-at="2019-06-20T12:21:27Z" depends-on-methods="verifyProductCart.testEbay.browse" finished-at="2019-06-20T12:22:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_2 -->
+        <test-method status="PASS" signature="deleteItem()[pri:0, instance:verifyProductCart.testEbay@91161c7]" name="deleteItem" duration-ms="11047" started-at="2019-06-20T12:22:02Z" depends-on-methods="verifyProductCart.testEbay.item_2" finished-at="2019-06-20T12:22:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteItem -->
+      </class> <!-- verifyProductCart.testEbay -->
+    </test> <!-- FirefoxTest -->
+  </suite> <!-- testing ebay -->
+</testng-results>
